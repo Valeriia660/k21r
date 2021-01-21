@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'k21r';
 }
 
-constructor() {
+//constructor() {
   if (localStorage.getItem("admin")) {
     console.log("admin is alreay exists")
   } else {
@@ -51,4 +51,4 @@ if (jsonAdmin) {
     console.log("Login - " + login_for_admin)
     console.log("Password - " + password_for_admin)
 }
-}
+//}
