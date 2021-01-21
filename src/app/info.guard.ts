@@ -5,7 +5,9 @@ export { CanActivate } from "@angular/router";
 
 export class AboutGuard implements CanActivate {
     canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | Observable<boolean> {
-        return confirm("Войдите в аккаунт, чтобы перейти на эту страницу");
+        alert("Войдите в систему, чтобы перейти на данную страницу")
+        return false;
+
     }
 
 }
