@@ -7,7 +7,9 @@ import { MainComponent } from './main/main.component';
 import { LoginComponent } from './login/login.component';
 import { AboutComponent } from './about/about.component';
 import { AdminComponent } from './admin/admin.component';
-import { AboutGuard } from './info.guard';
+import { FormsModule } from '@angular/forms';
+import { AdGuard } from './ad.guard';
+import { AuthGuard } from './auth.guard';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,10 @@ import { AboutGuard } from './info.guard';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
-  providers: [AboutGuard],
+  providers: [AuthGuard, AdGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

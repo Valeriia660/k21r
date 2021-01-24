@@ -1,8 +1,7 @@
 <div>
     <form>
-        <label for="логин">Логин:</label>
-        <input type="login" placeholder="Логин" required><br>
-        <label for="логин">Пароль:</label>
-        <input type="password" placeholder="Логин" required><br>
- </form>
- </div>
+        <input type="text" name="login" #login placeholder="user login">
+        <br>
+        <button (click)="logIn(login.value)">Войти</button>
+    </form>
+</div>
